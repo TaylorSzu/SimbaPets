@@ -1,0 +1,158 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 97%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tabs h3 {
+    cursor: pointer;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    border: none;
+}
+
+.tabs h3.active {
+    border-bottom: 2px solid black;
+}
+
+.tab-content {
+    background-color: #f9f9f9;
+    border: 1px solid #ffffff;
+}
+
+.tab-content-item {
+    display: none;
+}
+
+.tab-content-item.active {
+    display: block;
+}
+
+.fundo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contas-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    flex: 1;
+}
+
+.form-control label {
+    margin-bottom: 5px;
+}
+
+.form-control input,
+.form-control select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.save-button,
+.cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.cancel-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.total-contas {
+    margin-top: 20px;
+}
+
+.total-contas h2 {
+    margin-bottom: 10px;
+}
+
+.contas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.contas th,
+.contas td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.contas th {
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ddd;
+}
+
+.btn-acao {
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-acao img {
+  width: 30px;
+}
+
+#conteiner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  display: none;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+}

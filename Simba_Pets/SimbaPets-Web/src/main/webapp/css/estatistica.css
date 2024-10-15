@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.produtos,
+.vendas {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.produtos {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.vendas {
+  flex: 1;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 10px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+thead {
+  background-color: #f9f9f9;
+    text-align: center;
+}
+
+thead tr {
+  border-bottom: 2px solid #ddd;
+}
+
+thead td {
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+  text-align: center;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+  padding: 10px;
+  text-align: center;
+}
+
+.fundo-venda {
+  background-color: #dddddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.fundo-venda h1 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.fundo-venda h2 {
+  font-size: 1.4rem;
+  color: #666;
+}
+
+button {
+  align-self: flex-start;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+  background-color: #ffa500;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff9933;
+}
+
+button img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .produtos,
+  .vendas {
+    flex: 1;
+  }
+}

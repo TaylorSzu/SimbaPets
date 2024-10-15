@@ -1,0 +1,67 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- Mapeamento para que o navegador reconheça a servlet -->
+
+    <servlet>
+        <servlet-name>ProdutosServelet</servlet-name>
+        <servlet-class>servelet.ProdutoServelet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>EstoqueServelet</servlet-name>
+        <servlet-class>servelet.EstoqueServelet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ContasServelet</servlet-name>
+        <servlet-class>servelet.ContaServelet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>FornecedorServelet</servlet-name>
+        <servlet-class>servelet.FornecedorServelet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>VendaServelet</servlet-name>
+        <servlet-class>servelet.VendaServelett</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>EstatisticaServelet</servlet-name>
+        <servlet-class>servelet.EstatisticasServelet</servlet-class>
+    </servlet>
+
+    <!-- Configuração para servir arquivos estáticos -->
+    <servlet>
+        <servlet-name>default</servlet-name>
+        <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
+        <init-param>
+            <param-name>debug</param-name>
+            <param-value>0</param-value>
+        </init-param>
+        <init-param>
+            <param-name>listings</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/css/*</url-pattern>
+        <url-pattern>/img/*</url-pattern>
+        <url-pattern>/js/*</url-pattern>
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
+
+    <!-- Configuração de boas-vindas -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>

@@ -1,0 +1,419 @@
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 97%;
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    .tabs {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .tabs h3 {
+      cursor: pointer;
+      margin-right: 20px;
+      padding-bottom: 10px;
+      border: none;
+    }
+
+    .tabs h3.active {
+      border-bottom: 2px solid black;
+    }
+
+    .tab-content {
+      background-color: #f9f9f9;
+      border: 1px solid #ffffff;
+    }
+
+    .tab-content-item {
+      display: none;
+    }
+
+    .tab-content-item.active {
+      display: block;
+    }
+
+    .fundo {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-control {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin-right: 10px;
+      width: calc(50% - 10px);
+    }
+
+    .form-control:last-child {
+      margin-right: 0;
+    }
+
+    .form-control label {
+      margin-bottom: 5px;
+    }
+
+    .form-control input,
+    .form-control select,
+    .form-control textarea {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .form-control select {
+      width: 100%; /* Ajusta a largura do select para preencher o espaço disponível */
+    }
+
+    .form-buttons {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+    }
+
+    .save-button,
+    .cancel-button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 18px;
+    }
+
+    .save-button img {
+      width: 35px;
+      height: 35px;
+    }
+
+    .cancel-button img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .save-button {
+      background-color: #007bff;
+      color: white;
+      width: 180px;
+      height: 50px;
+      border-radius: 20px;
+      font-size: 25px;
+    }
+
+    .cancel-button {
+      background-color: #6c757d;
+      color: white;
+      width: 180px;
+      height: 50px;
+      border-radius: 20px;
+      font-size: 25px;
+    }
+
+    #descricao {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 100%;
+      height: 200px;
+      resize: none;
+    }
+
+    .center-row {
+      justify-content: center;
+    }
+
+    .center-row .form-control {
+      margin-right: 10px;
+    }
+
+    .center-row .form-control:last-child {
+      margin-right: 0;
+    }
+
+    .select-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .select-container select {
+      width: 100%; /* Ajusta a largura do select dentro do container */
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-produtos {
+      color: white;
+      background-color: blue;
+      border: none;
+      border-radius: 20px;
+      width: 100px; /* Ajuste o tamanho do botão */
+      height: 35px; /* Ajuste o tamanho do botão */
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-produtos:hover {
+      background-color: darkblue;
+    }
+
+    .produtos {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .produtos th,
+    .custom-table td {
+      padding: 12px;
+      border: 1px solid #ddd;
+    }
+
+    .produtos th {
+      background-color: #f4f4f4;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .produtos tbody tr {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .produtos tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .produtos tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .lista-produto {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .lista-produto th,
+    .lista-produto td {
+      padding: 12px;
+      border: 1px solid #ddd;
+    }
+
+    .lista-produto th {
+      background-color: #f4f4f4;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .btn-ação {
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 30px;
+      width: 30px;
+      margin-right: 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .btn-ação img {
+      width: 30px;
+    }
+
+    td {
+      text-align: center;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    .lista-produto th:nth-child(5),
+    .lista-produto td:nth-child(5) {
+      width: 15%;
+    }
+
+    .lista-produto th,
+    .lista-produto td {
+      padding: 12px;
+      border: 1px solid #ddd;
+    }
+
+    .input-group{
+       width: 150vh;
+    }
+
+    #conteiner {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 400px;
+      display: none;
+      z-index: 1000;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .voltar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 50px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .voltar img {
+      width: 25px;
+      margin-right: 10px;
+    }
+
+    .voltar:hover{
+      background-color: #d9d5d5;
+    }
+
+    @media screen and (max-width: 768px) {
+      .tabs {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .row {
+        flex-direction: column;
+      }
+
+      .form-control {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .form-buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .save-button, .cancel-button {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+
+      #conteiner {
+        width: 90%;
+        height: auto;
+      }
+
+      .btn-produtos {
+        width: 100%;
+      }
+
+      .input-group {
+        width: 100%;
+      }
+
+      .produtos, .lista-produto {
+        font-size: 14px;
+      }
+
+      td, th {
+        padding: 8px;
+      }
+    }
+
+@media (max-width: 768px) {
+
+  /* Tabela responsiva */
+  .produtos, .lista-produto {
+    display: block; /* Faz a tabela ocupar toda a largura do container */
+    width: 100%;
+    overflow-x: auto; /* Habilita o scroll horizontal */
+    -webkit-overflow-scrolling: touch; /* Para rolagem suave no iOS */
+  }
+
+  .produtos th, .lista-produto th, .produtos td, .lista-produto td {
+    text-align: left; /* Alinhamento à esquerda para melhor legibilidade */
+    padding: 8px; /* Reduz o padding para melhor ajuste em telas pequenas */
+    white-space: nowrap; /* Previne quebras de linha nas células */
+  }
+
+  /* Colunas da tabela devem ser ajustadas para se adaptarem ao tamanho da tela */
+  .produtos th {
+    font-size: 14px; /* Reduz o tamanho da fonte para caber melhor */
+  }
+
+  /* Garantir que a tabela possa ser rolada horizontalmente */
+  .produtos, .lista-produto {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+
+/* Estilo adicional para formatação de tabelas e containers */
+.produtos, .lista-produto {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 20px 0;
+  background-color: #fff;
+}
+
+.produtos th, .lista-produto th {
+  color: #333;
+  text-align: center;
+}
+
+.produtos td, .lista-produto td {
+  text-align: center;
+}
+
+/* Estilo para linhas alternadas */
+.produtos tbody tr:nth-child(odd), .lista-produto tbody tr:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+/* Estilo para linhas de destaque ao passar o mouse */
+.produtos tbody tr:hover, .lista-produto tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Adiciona uma margem ao redor da tabela */
+.produtos, .lista-produto {
+  margin: 20px 0;
+  padding: 10px;
+}
+

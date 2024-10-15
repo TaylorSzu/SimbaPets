@@ -1,0 +1,36 @@
+- cadastrar produto (feito)
+- cadastrar conta (feito)
+- cadastrar fornecedor (feito)
+- cadastrar venda (feito)
+
+- editar produto (feito)
+- editar conta (feito)
+- editar fornecedor (feito)
+- editar venda (x)
+
+- listar produto(feito)
+- listar conta (feito)
+- listar fornecedor (feito)
+- listar venda (feito)
+
+- deletar produto (feito)
+- deletar conta (feito)
+- deletar fornecedor (feito)
+- deletar venda (feito)
+
+- atualizar estoque (feito)
+
+- estatísticas produto (feito)
+- estatísticas venda (feito)
+- estatística conta (feito)
+
+- responsividade produto (feito)
+- responsividade vendas(feito)
+- responsividade fornecedores(feito)
+- responsividade contas(feito)
+- responsividade estoque(feito)
+- responsividade financeiro(feito)
+- responsividade estatísticas(feito)
+
+- verificação dos campos (feito)
+
